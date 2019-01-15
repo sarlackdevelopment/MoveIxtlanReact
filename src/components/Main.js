@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import MainContent from './MainContent'
+import MainContent from './MainContent/MainContent'
 
 function Main() {
     return (
