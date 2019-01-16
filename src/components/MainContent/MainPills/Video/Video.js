@@ -7,7 +7,7 @@ function Video() {
         <div style={{ 'backgroundColor': 'rgba(248, 249, 250, 0.5)' }} className="container-fluid border border-primary">
             <h3 className="text-center">Видео</h3>
             <div className="container-fluid embed-responsive embed-responsive-16by9 m-1">
-                <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/7ATrqGquF5E"
+                <iframe title="котята норвежской норвежский котенок норвежские лесные котята" className="embed-responsive-item" src="https://www.youtube.com/embed/7ATrqGquF5E"
                     allowFullScreen name="slider"></iframe>
             </div>
 

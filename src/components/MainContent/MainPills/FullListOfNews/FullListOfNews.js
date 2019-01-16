@@ -110,17 +110,56 @@ function FullListOfNews() {
     const title6 = '20 декабря 2017 – Регистрация питомника. Наш официальный день рождения.'
     const title7 = '1 октября 2017 г. – Прибытие кошек. Наш неофициальный день рождения.'
 
+    const arrayOfNewses = [
+        {
+            'key': '1',
+            'text': text1, 
+            'title': title1
+        }, 
+        {
+            'key': '2',
+            'text': text2, 
+            'title': title2
+        },
+        {
+            'key': '3',
+            'text': text3, 
+            'title': title3
+        },
+        {
+            'key': '4',
+            'text': text4, 
+            'title': title4
+        },
+        {
+            'key': '5',
+            'text': text5, 
+            'title': title5
+        },
+        {
+            'key': '6',
+            'text': text6, 
+            'title': title6
+        },
+        {
+            'key': '7',
+            'text': text7, 
+            'title': title7
+        },
+    ]
+    const theNewses = 
+        arrayOfNewses.map(news =>    
+            <PiceOfFullNews key={news.key} news={news} />
+        )
+
     return (
 
         <div style={{ 'backgroundColor': 'rgba(248, 249, 250, 0.5)' }}>
             <h3 className="text-center">Новости</h3>
-            <PiceOfFullNews title={title1} text={text1} />
-            <PiceOfFullNews title={title2} text={text2} />
-            <PiceOfFullNews title={title3} text={text3} />
-            <PiceOfFullNews title={title4} text={text4} />
-            <PiceOfFullNews title={title5} text={text5} />
-            <PiceOfFullNews title={title6} text={text6} />
-            <PiceOfFullNews title={title7} text={text7} />
+
+            <div id="accordion">
+                {theNewses}
+            </div>
 
         </div>
     )

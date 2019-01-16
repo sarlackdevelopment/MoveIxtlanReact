@@ -5,9 +5,9 @@ function PiceOfFullNews(props) {
     return (
         <article className="container border-top border-left border-right border-primary">
             <header>
-                <h3 className="text-center">{props.title}</h3>
+                <h3 className="text-center">{props.news.title}</h3>
             </header>
-            {props.text}
+            {props.news.text}
         </article>
     )
 }

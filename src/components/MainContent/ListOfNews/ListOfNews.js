@@ -111,6 +111,68 @@ function ListOfNews() {
     const title6 = '20 декабря 2017 – Регистрация питомника. Наш официальный день рождения.'
     const title7 = '1 октября 2017 г. – Прибытие кошек. Наш неофициальный день рождения.'
 
+    const arrayOfNewses = [
+        {
+            'key': '1',
+            'text': text1, 
+            'title': title1,
+            'idHeadNews': 'heading1',
+            'dataTarget': '#collapse1',
+            'idBodyNews': 'collapse1'
+        }, 
+        {
+            'key': '2',
+            'text': text2, 
+            'title': title2,
+            'idHeadNews': 'heading2',
+            'dataTarget': '#collapse2',
+            'idBodyNews': 'collapse2'
+        },
+        {
+            'key': '3',
+            'text': text3, 
+            'title': title3,
+            'idHeadNews': 'heading3',
+            'dataTarget': '#collapse3',
+            'idBodyNews': 'collapse3'
+        },
+        {
+            'key': '4',
+            'text': text4, 
+            'title': title4,
+            'idHeadNews': 'heading4',
+            'dataTarget': '#collapse4',
+            'idBodyNews': 'collapse4'
+        },
+        {
+            'key': '5',
+            'text': text5, 
+            'title': title5,
+            'idHeadNews': 'heading5',
+            'dataTarget': '#collapse5',
+            'idBodyNews': 'collapse5'
+        },
+        {
+            'key': '6',
+            'text': text6, 
+            'title': title6,
+            'idHeadNews': 'heading6',
+            'dataTarget': '#collapse6',
+            'idBodyNews': 'collapse6'
+        },
+        {
+            'key': '7',
+            'text': text7, 
+            'title': title7,
+            'idHeadNews': 'heading7',
+            'dataTarget': '#collapse7',
+            'idBodyNews': 'collapse7'
+        },
+    ]
+    const theNewses = arrayOfNewses.map(news =>   
+        <PiceOfNews key={news.key} news={news}/>      
+    )
+
     return (
         <section id="newsArea" className="col-4 border-right border-primary">
 
@@ -121,15 +183,7 @@ function ListOfNews() {
                 <Advertising />
 
                 <div id="accordion">
-
-                    <PiceOfNews idHeadNews='heading1' dataTarget='#collapse1' title={title1} idBodyNews='collapse1' text={text1} />
-                    <PiceOfNews idHeadNews='heading2' dataTarget='#collapse2' title={title2} idBodyNews='collapse2' text={text2} />
-                    <PiceOfNews idHeadNews='heading3' dataTarget='#collapse3' title={title3} idBodyNews='collapse3' text={text3} />
-                    <PiceOfNews idHeadNews='heading4' dataTarget='#collapse4' title={title4} idBodyNews='collapse4' text={text4} />
-                    <PiceOfNews idHeadNews='heading5' dataTarget='#collapse5' title={title5} idBodyNews='collapse5' text={text5} />
-                    <PiceOfNews idHeadNews='heading6' dataTarget='#collapse6' title={title6} idBodyNews='collapse6' text={text6} />
-                    <PiceOfNews idHeadNews='heading7' dataTarget='#collapse7' title={title7} idBodyNews='collapse7' text={text7} />
-
+                    {theNewses}
                 </div>
 
             </div>
