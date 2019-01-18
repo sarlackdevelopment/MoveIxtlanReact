@@ -24,3 +24,4 @@ yarn-error.log*
 
 # another
 /public_html/images/
+/public_html/other/

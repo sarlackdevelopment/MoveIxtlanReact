@@ -1,7 +1,5 @@
 import React from 'react'
 import 'bootstrap'
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import owl from 'owl.carousel';
 
 function Exhibitions() {
     return (

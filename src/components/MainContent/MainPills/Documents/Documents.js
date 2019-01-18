@@ -1,7 +1,13 @@
 import React from 'react'
 import 'bootstrap'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 function Documents() {
+    const responsiveOWL = {
+        0: {items: 1}
+    };
     return (
 
         <div id="accordionCatsCertificates">
@@ -23,18 +29,11 @@ function Documents() {
 
                         <div className="container border border-primary">
 
-                            <div className="container border border-primary">
-
-                                <div className="owl-carousel">
-                                    <div className="item"><img title="норвежская лесная кошка купить в москве питомники норвежская лесная купить"
-                                        src="images/Certificates/large/1.jpg" alt="норвежская лесная купить" /></div>
-                                    <div className="item"><img title="норвежская лесная кошка купить в москве норвежская лесная кошка купить в москве"
-                                        src="images/Certificates/large/2.jpg" alt="питомники норвежских кошек" /></div>
-                                    <div className="item"><img title="норвежская лесная кошка купить в москве питомники питомники норвежских лесных кошек в москве"
-                                        src="images/Certificates/large/3.jpg" alt="норвежская лесная питомник" /></div>
-                                </div>
-
-                            </div>
+                            <OwlCarousel className="owl-theme" loop={true} margin={10} nav={false} autoplay={true} smartSpeed={3000} autoplayTimeout={5000} responsive={responsiveOWL}>
+                                <div className="item"><img src="images/Certificates/large/1.jpg" /></div>
+                                <div className="item"><img src="images/Certificates/large/2.jpg" /></div>
+                                <div className="item"><img src="images/Certificates/large/3.jpg" /></div>
+                            </OwlCarousel>
 
                             <div className="container border border-primary">
 
