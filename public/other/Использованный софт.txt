@@ -1,2 +1,2 @@
 Карусель https://therichpost.com/integrate-owl-carousel-react-js
-Fancybox https://github.com/gianglevan94/react-fancybox
+Галлерея https://github.com/benhowell/react-grid-gallery

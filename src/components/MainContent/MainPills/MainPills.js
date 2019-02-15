@@ -4,7 +4,7 @@ import AboutBreed from './AboutBreed/AboutBreed'
 import Exhibitions from './Exhibitions/Exhibitions'
 import Video from './Video/Video'
 import FullListOfNews from './FullListOfNews/FullListOfNews'
-import Documents from './Documents/Documents'
+import DocumentsAndCertificates from './DocumentsAndCertificates/DocumentsAndCertificates'
 import 'bootstrap'
 
 function MainPills() {
@@ -53,7 +53,7 @@ function MainPills() {
                 </section>
 
                 <section className="tab-pane fade" id="v-pills-autors" role="tabpanel" aria-labelledby="v-pills-autors-tab">
-                    <Documents />
+                    <DocumentsAndCertificates />
                 </section>
 
             </div>

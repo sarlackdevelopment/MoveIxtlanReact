@@ -1,74 +1,41 @@
 import React from 'react'
 import 'bootstrap'
-import OwlCarousel from 'react-owl-carousel';
+import Documents from '../DocumentsAndCertificates/Documents/Documents'
+
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-function Documents() {
+
+function DocumentsAndCertificates() {
     const responsiveOWL = {
-        0: {items: 1}
+        0: { items: 1 }
     };
+
+    const IMAGES =
+        [{
+            src: "images/Certificates/small/1.jpg",
+            thumbnail: "images/Certificates/small/1.jpg",
+            thumbnailWidth: 320,
+            thumbnailHeight: 174
+        },
+        {
+            src: "images/Certificates/small/2.jpg",
+            thumbnail: "images/Certificates/small/2.jpg",
+            thumbnailWidth: 320,
+            thumbnailHeight: 212
+        },
+
+        {
+            src: "images/Certificates/small/3.jpg",
+            thumbnail: "images/Certificates/small/3.jpg",
+            thumbnailWidth: 320,
+            thumbnailHeight: 212
+        }]
+
     return (
 
         <div id="accordionCatsCertificates">
-
-            <h4 className="text-center">Документы</h4>
-            <div className="card">
-                <div className="card-header" id="headingCertificates1">
-                    <h5 className="text-center mb-0">
-                        <button className="btn btn-link collapsed btn-wrap-normal" data-toggle="collapse"
-                            data-target="#collapseCertificates1" aria-expanded="true" aria-controls="headingCertificates1">
-                            Родословные.
-                                        </button>
-                    </h5>
-                </div>
-
-                <div id="collapseCertificates1" className="collapse show" aria-labelledby="headingCertificates1"
-                    data-parent="#accordionCatsCertificates">
-                    <div className="card-body">
-
-                        <div className="container border border-primary">
-
-                            <OwlCarousel className="owl-theme" loop={true} margin={10} nav={false} autoplay={true} smartSpeed={3000} autoplayTimeout={5000} responsive={responsiveOWL}>
-                                <div className="item"><img src="images/Certificates/large/1.jpg" /></div>
-                                <div className="item"><img src="images/Certificates/large/2.jpg" /></div>
-                                <div className="item"><img src="images/Certificates/large/3.jpg" /></div>
-                            </OwlCarousel>
-
-                            <div className="container border border-primary">
-
-                                <div className="row">
-                                    <div className="col-lg-3 col-md-4 col-6 thumb">
-                                        <a data-fancybox="certificates1" href="images/Certificates/large/1.jpg">
-                                            <img className="img-fluid" title="купить котенка норвежской лесной кошки в москве котенок норвежской лесной"
-                                                src="images/Certificates/small/1.jpg" alt="питомник норвежской" />
-                                        </a>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-6 thumb">
-                                        <a data-fancybox="certificates1" href="images/Certificates/large/2.jpg">
-                                            <img className="img-fluid" title="норвежская лесная кошка котята сколько стоит котенок норвежской лесной кошки котята норвежской лесной кошки цена"
-                                                src="images/Certificates/small/2.jpg" alt="продажа норвежской" />
-                                        </a>
-                                    </div>
-                                    <div className="col-lg-3 col-md-4 col-6 thumb">
-                                        <a data-fancybox="certificates1" href="images/Certificates/large/3.jpg">
-                                            <img className="img-fluid" title="котенок в подарок на новый год норвежский котенок в подарок котенок в подарок"
-                                                src="images/Certificates/small/3.jpg" alt="норвежские лесные котята" />
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+            <Documents />
             <div className="card">
                 <div className="card-header" id="headingCertificates2">
                     <h5 className="text-center mb-0">
@@ -152,4 +119,4 @@ function Documents() {
     )
 }
 
-export default Documents
+export default DocumentsAndCertificates
